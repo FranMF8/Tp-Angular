@@ -22,6 +22,7 @@ export class StudentsComponent {
   renderer: any;
 
   constructor(private _studentService: StudentService) {
+    this.studentArray = new Array<Student>;
     this.selectedStudent = new Student();
     this.dniFindActive = false;
     this.buttonText = "🔍︎";
